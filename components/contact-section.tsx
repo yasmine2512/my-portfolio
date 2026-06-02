@@ -55,7 +55,7 @@ export function ContactSection() {
               asChild
               className="bg-gradient-to-r from-primary to-accent hover:opacity-90"
             >
-              <a href="mailto:your@email.com">
+              <a href="mailto:yasmineseddari32@gmail.com">
                 <Send className="h-4 w-4 mr-2" />
                 Say Hello
               </a>
@@ -66,17 +66,17 @@ export function ContactSection() {
             <p className="text-muted-foreground text-sm mb-4">Or find me on</p>
             <div className="flex items-center justify-center gap-6">
               <SocialLink
-                href="https://github.com"
+                href="https://github.com/yasmine2512"
                 icon={<Github className="h-6 w-6" />}
                 label="GitHub"
               />
               <SocialLink
-                href="https://linkedin.com"
+                href="https://linkedin.com/in/yasmine-s-6b4721206"
                 icon={<Linkedin className="h-6 w-6" />}
                 label="LinkedIn"
               />
               <SocialLink
-                href="mailto:your@email.com"
+                href="mailto:yasmineseddari32@gmail.com"
                 icon={<Mail className="h-6 w-6" />}
                 label="Email"
               />

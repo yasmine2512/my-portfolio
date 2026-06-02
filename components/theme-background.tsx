@@ -24,7 +24,7 @@ export function ThemeBackground() {
           loop
           playsInline
           className="fixed inset-0 -z-20 h-full w-full object-cover opacity-10"
-          style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: -10, opacity: 1 }}
+          style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: -10, opacity: 0.5 }}
         >
           <source src="/images/vid1.mp4" type="video/mp4" />
         </video>
@@ -32,7 +32,7 @@ export function ThemeBackground() {
        <img
           src="/images/im5.jpg"
           alt=""
-          style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: -8,  }}
+          style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: -8,opacity: 0.8  }}
         />
       )}
       {/* Overlay for better text readability */}

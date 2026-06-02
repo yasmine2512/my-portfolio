@@ -15,7 +15,7 @@ export function Footer() {
             transition={{ delay: 0.2 }}
           >
             Designed & Built with{" "}
-            <span className="text-primary">♥</span> by Your Name
+            <span className="text-primary">♥</span> by Yasmine
           </motion.p>
 
           <motion.div
@@ -25,7 +25,7 @@ export function Footer() {
             transition={{ delay: 0.3 }}
           >
             <a
-              href="https://github.com"
+              href="https://github.com/yasmine2512"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -34,7 +34,7 @@ export function Footer() {
               <span className="sr-only">GitHub</span>
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/yasmine-s-6b4721206"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -43,7 +43,7 @@ export function Footer() {
               <span className="sr-only">LinkedIn</span>
             </a>
             <a
-              href="mailto:your@email.com"
+              href="mailto:yasmineseddari32@gmail.com"
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               <Mail className="h-5 w-5" />

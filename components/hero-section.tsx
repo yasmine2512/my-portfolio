@@ -3,17 +3,32 @@
 import { motion } from "framer-motion"
 import { Github, Linkedin, Mail, ArrowDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { useEffect, useState } from "react";
+
+
 
 export function HeroSection() {
+  const text = "Web Developer & AI Engineering Student";
+  const [displayedText, setDisplayedText] = useState("");
+
+  useEffect(() => {
+    let index = 0;
+
+    const interval = setInterval(() => {
+      setDisplayedText(text.slice(0, index + 1));
+      index++;
+
+      if (index >= text.length) {
+        clearInterval(interval);
+      }
+    }, 100);
+
+    return () => clearInterval(interval);
+  }, []);
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0 -z-10">
-        {/* <img 
-    src="/images/im3.jpg" 
-    alt="image1" 
-    className="h-full w-full object-cover opacity-20 dark:opacity-10"
-  /> */}
         <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-pulse delay-1000" />
       </div>
@@ -41,7 +56,7 @@ export function HeroSection() {
             transition={{ delay: 0.3 }}
           >
             <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-              Your Name
+          Yasmine
             </span>
           </motion.h1>
 
@@ -51,7 +66,8 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
           >
-            Web Developer & AI Engineering Student
+            {displayedText}
+            {/* Web Developer & AI Engineering Student */}
           </motion.h2>
 
           <motion.p
@@ -85,9 +101,9 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7 }}
           >
-            <SocialLink href="https://github.com" icon={<Github className="h-5 w-5" />} label="GitHub" />
-            <SocialLink href="https://linkedin.com" icon={<Linkedin className="h-5 w-5" />} label="LinkedIn" />
-            <SocialLink href="mailto:your@email.com" icon={<Mail className="h-5 w-5" />} label="Email" />
+            <SocialLink href="https://github.com/yasmine2512" icon={<Github className="h-5 w-5" />} label="GitHub" />
+            <SocialLink href="https://linkedin.com/in/yasmine-s-6b4721206" icon={<Linkedin className="h-5 w-5" />} label="LinkedIn" />
+            <SocialLink href="mailto:yasmineseddari32@gmail.com" icon={<Mail className="h-5 w-5" />} label="Email" />
           </motion.div>
         </motion.div>
 
@@ -121,3 +137,4 @@ function SocialLink({ href, icon, label }: { href: string; icon: React.ReactNode
     </motion.a>
   )
 }
+ 

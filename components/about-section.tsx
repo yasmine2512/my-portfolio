@@ -41,20 +41,13 @@ export function AboutSection() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div variants={itemVariants} className="space-y-6">
               <p className="text-muted-foreground leading-relaxed">
-                I&apos;m a developer passionate about crafting accessible, pixel-perfect user 
-                interfaces that blend thoughtful design with robust engineering. My favorite 
-                work lies at the intersection of design and development, creating experiences 
-                that not only look great but are meticulously built for performance and usability.
+                I&apos;m a Computer Science student with a strong interest in Artificial Intelligence, Web Development, and Software Engineering. I enjoy building practical applications that solve real problems and help me learn new technologies along the way.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Currently, I&apos;m a 3rd year AI Engineering student, diving deep into machine 
-                learning, neural networks, and the fascinating world of artificial intelligence. 
-                I love combining my web development skills with AI to build intelligent, 
-                modern applications.
+                Currently, I&apos;m 3rd year AI Engineering student, diving deep into machine learning, neural networks, and the fascinating world of artificial intelligence. I love combining my web development skills with AI to build intelligent, modern applications.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                In my spare time, I&apos;m usually exploring new technologies, contributing to 
-                open-source projects, or working on personal projects that push my boundaries.
+               I&apos;m always looking for opportunities to learn, improve, and take on new challenges that help me grow as a developer and future AI engineer.
               </p>
             </motion.div>
 

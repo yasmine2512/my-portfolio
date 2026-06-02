@@ -1,61 +1,64 @@
 "use client"
-
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
 import { ExternalLink, Github, Folder } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Image from "next/image";
 
 const projects = [
   {
-    title: "AI Image Generator",
+    title: "InsightFlow",
+    description:"InsightFlow is a multi-tenant Business Intelligence SaaS that enables organizations to import operational data and transform it into actionable analytics, dashboards, and business insights.",
+    image: "/images/insightflow.png",
+    tags: ["React", "NodeJs", "Express", "MongoDB","RestAPI"],
+    github: "https://github.com/yasmine2512/InsightFlow",
+    featured: true,
+  },{
+    title: "ThesisHub",
     description:
-      "A web application that uses machine learning models to generate unique images from text prompts. Built with React and integrated with state-of-the-art AI APIs.",
-    image: "/placeholder-project-1.jpg",
-    tags: ["React", "TypeScript", "AI/ML", "Tailwind CSS"],
-    github: "https://github.com",
-    live: "https://example.com",
+      "ThesisHub, a .NET/Blazor web application for managing and discovering Master’s and Doctoral thesis topics, featuring advanced search, keyword filtering, favorites, and student-professor interaction.",
+    image: "/images/ThesisHub.png",
+    tags: ["C#", ".NET", "Blazor", "Bootstrap CSS","MySQL"],
+    github: "https://github.com/yasmine2512/ThesisHub",
+    featured: true,
+  },
+  
+  {
+    title: "TaskFlow",
+    description:
+      "A Java desktop application built with JavaFX to help you manage your tasks efficiently. This Task Manager allows you to organize, track, and prioritize your daily activities with a user-friendly interface.",
+    image: "/images/TaskFlow.png",
+    tags: ["Java", "JavaFX", "CSS", "SQL"],
+    github: "https://github.com/yasmine2512/TaskFlow",
     featured: true,
   },
   {
-    title: "E-Commerce Platform",
+    title: "LearnHive",
     description:
-      "Full-stack e-commerce solution with cart functionality, payment integration, and admin dashboard. Features real-time inventory management.",
-    image: "/placeholder-project-2.jpg",
-    tags: ["Next.js", "Node.js", "PostgreSQL", "Stripe"],
-    github: "https://github.com",
-    live: "https://example.com",
+      "LearnHive is an interactive Node.js and JavaScript web application that transforms any text or PDF into a personalized quiz using the OpenAI API. Perfect for learners who want to test their knowledge, track progress, and revisit quizzes for better retention.",
+    image: "/images/LearnHive1.png",
+    tags: ["React", "NodeJs", "Express", "MongoDB","RestAPI"],
+    github: "https://github.com/yasmine2512/LearnHive",
     featured: true,
   },
   {
-    title: "Real-time Chat App",
-    description:
-      "A real-time messaging application with end-to-end encryption, file sharing, and group chat capabilities using WebSocket technology.",
-    image: "/placeholder-project-3.jpg",
-    tags: ["React", "Socket.io", "Express", "MongoDB"],
-    github: "https://github.com",
-    live: "https://example.com",
-    featured: true,
+    title: "OthelloGame",
+    description: "A Classic Othello (Reversi) board Game in Python featuring 1v1 and AI modes.",
+    tags: ["Pyhton", "pyGame"],
+    github: "https://github.com/yasmine2512/Othello_Game",
   },
   {
-    title: "Portfolio Website",
-    description: "Modern portfolio website with dark mode, animations, and responsive design.",
-    tags: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    github: "https://github.com",
-  },
-  {
-    title: "Weather Dashboard",
-    description: "Weather forecasting app with location-based data and interactive charts.",
-    tags: ["React", "Chart.js", "Weather API"],
-    github: "https://github.com",
-    live: "https://example.com",
-  },
-  {
-    title: "Task Management API",
-    description: "RESTful API for task management with authentication and rate limiting.",
-    tags: ["Node.js", "Express", "JWT", "MongoDB"],
-    github: "https://github.com",
-  },
+    title: "Meta-Heuristic Optimization",
+    description: "A Python project implementing and comparing multiple metaheuristic algorithms to solve the Traveling Salesman Problem (TSP), with visualization using real Algerian city coordinates.",
+    tags: ["Python", "matplotlib", "pandas"],
+    github: "https://github.com/yasmine2512/meta-heuristic",
+  },{
+    title: "Neural Network Classification",
+    description: "Implementation and visualization of a 1D neural network with ReLU hidden units, decision boundary analysis, and likelihood-based optimization from scratch.",
+    tags: ["Python", "numpy", "matplotlib"],
+    github: "https://github.com/yasmine2512/Neural-Network-Classification",
+  }
 ]
 
 export function ProjectsSection() {
@@ -152,10 +155,20 @@ function FeaturedProjectCard({
         >
           <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 group-hover:opacity-0 transition-opacity" />
           <div className="absolute inset-0 flex items-center justify-center text-muted-foreground">
-            <div className="text-center">
+            {project.image ? (
+            <Image
+            src= {project.image}
+            alt= {project.title}
+            fill
+            className="w-full h-full object-fill"
+          />):(<div className="text-center items-center justify-center">
               <Folder className="h-16 w-16 mx-auto mb-2 opacity-50" />
               <p className="text-sm">Project Screenshot</p>
-            </div>
+            </div>)}
+            {/* <div className="text-center">
+              <Folder className="h-16 w-16 mx-auto mb-2 opacity-50" />
+              <p className="text-sm">Project Screenshot</p>
+            </div> */}
           </div>
         </motion.div>
       </div>
@@ -185,14 +198,14 @@ function FeaturedProjectCard({
               </a>
             </Button>
           )}
-          {project.live && (
+          {/* {project.live && (
             <Button variant="ghost" size="icon" asChild>
               <a href={project.live} target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="h-5 w-5" />
                 <span className="sr-only">Live Demo</span>
               </a>
             </Button>
-          )}
+          )} */}
         </div>
       </div>
     </motion.div>
@@ -230,7 +243,7 @@ function OtherProjectCard({
               <span className="sr-only">GitHub</span>
             </a>
           )}
-          {project.live && (
+          {/* {project.live && (
             <a
               href={project.live}
               target="_blank"
@@ -240,7 +253,7 @@ function OtherProjectCard({
               <ExternalLink className="h-5 w-5" />
               <span className="sr-only">Live Demo</span>
             </a>
-          )}
+          )} */}
         </div>
       </div>
       <h3 className="font-semibold text-lg mb-2 group-hover:text-primary transition-colors">

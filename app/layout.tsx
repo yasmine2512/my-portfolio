@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import { Inter, Geist_Mono } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/next'
 import { ThemeProvider } from '@/components/theme-provider'
 import { ThemeBackground } from '@/components/theme-background'
 import './globals.css'
@@ -67,7 +66,6 @@ export default function RootLayout({
           {children}
           </div>
         </ThemeProvider>
-        {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
   )
