@@ -225,7 +225,7 @@ function OtherProjectCard({
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
-      transition={{ delay: 0.4 + index * 0.1 }}
+      transition={{ delay: 0.1 + index * 0.05 }}
       whileHover={{ y: -8 }}
       className="p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-all group"
     >
