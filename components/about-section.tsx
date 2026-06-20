@@ -44,7 +44,7 @@ export function AboutSection() {
                 I&apos;m a Computer Science student with a strong interest in Artificial Intelligence, Web Development, and Software Engineering. I enjoy building practical applications that solve real problems and help me learn new technologies along the way.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                {/* Currently, I&apos;m 3rd year AI Engineering student, diving deep into machine learning, neural networks, and the fascinating world of artificial intelligence. I love combining my web development skills with AI to build intelligent, modern applications. */}
+                
                 I am constantly exploring new technologies and expanding my knowledge through coursework, personal projects, and self-learning. I enjoy challenging myself with new ideas and finding practical ways to bring them to life.
               </p>
               <p className="text-muted-foreground leading-relaxed">
