@@ -15,7 +15,7 @@ const skillCategories = [
   },
   {
     title: "Backend",
-    skills: ["Node.js", "Python", "Express.js",".NET","Nest.js", "RestAPI", "PostgreSQL", "MongoDB","MySQL","JWT","OAuth","Stripe"],
+    skills: ["Node.js", "Python", "Express.js",".NET","Nest.js", "RestAPI", "PostgreSQL", "MongoDB","MySQL","Redis","JWT","OAuth","Stripe"],
   },
   {
     title: "AI & ML",

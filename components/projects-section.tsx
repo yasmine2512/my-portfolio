@@ -7,6 +7,14 @@ import { Button } from "@/components/ui/button"
 import Image from "next/image";
 
 const projects = [
+   {
+    title: "FleetCompass",
+    description:"A real-time logistics and fleet telemetry platform designed for live asset tracking, operational monitoring, and data-driven performance analytics. Built with a modern full-stack architecture using React, NestJS, Supabase, and containerized for scalability via Docker.",
+    image: "/images/FleetCompass.png",
+    tags: ["React", "NestJs", "PostgreSQL/PostGIS", "Supabase","Redis","BullMQ","WebSocket","Docker"],
+    github: "https://github.com/yasmine2512/FleetCompass",
+    featured: true,
+  },
   {
     title: "InsightFlow",
     description:"InsightFlow is a multi-tenant Business Intelligence SaaS that enables organizations to import operational data and transform it into actionable analytics, dashboards, and business insights.",
