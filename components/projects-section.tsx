@@ -13,6 +13,7 @@ const projects = [
     image: "/images/FleetCompass.png",
     tags: ["React", "NestJs", "PostgreSQL/PostGIS", "Supabase","Redis","BullMQ","WebSocket","Docker"],
     github: "https://github.com/yasmine2512/FleetCompass",
+    live: "https://fleetcompassapp.onrender.com/",
     featured: true,
   },
   {
@@ -53,7 +54,7 @@ const projects = [
   {
     title: "OthelloGame",
     description: "A Classic Othello (Reversi) board Game in Python featuring 1v1 and AI modes.",
-    tags: ["Pyhton", "pyGame"],
+    tags: ["Pyhton", "pyGame","minmax-alpha-beta-pruning"],
     github: "https://github.com/yasmine2512/Othello_Game",
   },
   {
@@ -206,14 +207,14 @@ function FeaturedProjectCard({
               </a>
             </Button>
           )}
-          {/* {project.live && (
+          {project.live && (
             <Button variant="ghost" size="icon" asChild>
               <a href={project.live} target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="h-5 w-5" />
                 <span className="sr-only">Live Demo</span>
               </a>
             </Button>
-          )} */}
+          )}
         </div>
       </div>
     </motion.div>
