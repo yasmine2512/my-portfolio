@@ -76,7 +76,7 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
           >
-            I&apos;m a 3rd year AI Engineering student passionate about crafting modern, 
+            I&apos;m a 4th year AI Engineering student passionate about crafting modern, 
             user-friendly web applications. I blend thoughtful design with robust 
             engineering to create experiences that are both beautiful and functional.
           </motion.p>
