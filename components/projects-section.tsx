@@ -22,6 +22,7 @@ const projects = [
     image: "/images/insightflow.png",
     tags: ["React", "NodeJs", "Express", "MongoDB","RestAPI","JWT","OAuth","Stripe"],
     github: "https://github.com/yasmine2512/InsightFlow",
+    live:"https://insightflow-64la.onrender.com/",
     featured: true,
   },{
     title: "ThesisHub",
