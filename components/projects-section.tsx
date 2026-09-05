@@ -7,22 +7,28 @@ import { Button } from "@/components/ui/button"
 import Image from "next/image";
 
 const projects = [
-   {
+  {
+    title: "InsightFlow",
+    description:"InsightFlow is a multi-tenant Business Intelligence SaaS that enables organizations to import operational data and transform it into actionable analytics, dashboards, and business insights.",
+    image: "/images/InsightFlow.png",
+    tags: ["React", "NodeJs", "Express", "MongoDB","RestAPI","JWT","OAuth","Stripe"],
+    github: "https://github.com/yasmine2512/InsightFlow",
+    live:"https://insightflow-64la.onrender.com/",
+    featured: true,
+  },{
+    title: "AI Agent",
+    description:"AI-powered business assistant built with LangGraph and LangChain, featuring tool calling, conversational memory, business-data analysis, and RAG-based document question answering.",
+    image: "/images/AIAgent.jpg",
+    tags: ["Python", "RAG", "LangGraph", "LangChain","MongoDB","MongoDB Vector Search","Google Gemini API","Fast API"],
+    github: "https://github.com/yasmine2512/LangGraph-Ai-Agent",
+    featured: true,
+  },{
     title: "FleetCompass",
     description:"A real-time logistics and fleet telemetry platform designed for live asset tracking, operational monitoring, and data-driven performance analytics. Built with a modern full-stack architecture using React, NestJS, Supabase, and containerized for scalability via Docker.",
     image: "/images/FleetCompass.png",
     tags: ["React", "NestJs", "PostgreSQL/PostGIS", "Supabase","Redis","BullMQ","WebSocket","Docker"],
     github: "https://github.com/yasmine2512/FleetCompass",
     live: "https://fleetcompassapp.onrender.com/",
-    featured: true,
-  },
-  {
-    title: "InsightFlow",
-    description:"InsightFlow is a multi-tenant Business Intelligence SaaS that enables organizations to import operational data and transform it into actionable analytics, dashboards, and business insights.",
-    image: "/images/insightflow.png",
-    tags: ["React", "NodeJs", "Express", "MongoDB","RestAPI","JWT","OAuth","Stripe"],
-    github: "https://github.com/yasmine2512/InsightFlow",
-    live:"https://insightflow-64la.onrender.com/",
     featured: true,
   },{
     title: "ThesisHub",

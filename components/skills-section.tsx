@@ -15,15 +15,21 @@ const skillCategories = [
   },
   {
     title: "Backend",
-    skills: ["Node.js", "Python", "Express.js",".NET","Nest.js", "RestAPI", "PostgreSQL", "MongoDB","MySQL","Redis","JWT","OAuth","Stripe","bullMQ"],
+    skills: ["Node.js", "Express.js", "Nest.js", ".NET Core","RESTful API","WebSocket/Socket.IO","JWT","OAuth","Stripe","bullMQ"],
+  },{
+    title: "Databases",
+    skills: [ "PostgreSQL", "MongoDB","MySQL","Redis", "Neon", "Upstash"],
   },
   {
     title: "AI & ML",
-    skills: ["Python","Neural Networks","NumPy", "Deep Learning","Pandas","Machine Learning"],
+    skills: ["Python","Machine Learning", "Deep Learning", "RAG", "Neural Networks","NumPy","Pandas", "LLMs", "LangChain", "LangGraph"],
+  },{
+    title: "Testing",
+    skills: ["Jest", "Supertest", "Playwright","Unit Testing"," Integration Testing", "API Testing"],
   },
   {
-    title: "Tools & Others",
-    skills: ["Git","Github","npm", "Docker","Nginx","Linux", "VS Code", "Vercel"],
+    title: "DevOps & Tools",
+    skills: ["Git","Github","GitHub Actions", "Docker", "Nginx"," Linux", "npm"," Vercel"," Render"],
   },
 ]
 
