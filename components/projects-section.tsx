@@ -61,7 +61,7 @@ const projects = [
   {
     title: "OthelloGame",
     description: "A Classic Othello (Reversi) board Game in Python featuring 1v1 and AI modes.",
-    tags: ["Pyhton", "pyGame","minmax-alpha-beta-pruning"],
+    tags: ["Python", "pyGame","minmax-alpha-beta-pruning"],
     github: "https://github.com/yasmine2512/Othello_Game",
   },
   {
