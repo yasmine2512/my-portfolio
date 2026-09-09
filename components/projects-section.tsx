@@ -21,6 +21,7 @@ const projects = [
     image: "/images/AIAgent.jpg",
     tags: ["Python", "RAG", "LangGraph", "LangChain","MongoDB","MongoDB Vector Search","Google Gemini API","Fast API"],
     github: "https://github.com/yasmine2512/LangGraph-Ai-Agent",
+    live:"https://insightflow-64la.onrender.com/",
     featured: true,
   },{
     title: "FleetCompass",
